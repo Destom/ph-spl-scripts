@@ -1,0 +1,10 @@
+def health():
+    return 10
+def max_health():
+    return 10
+def attack():
+    return 4
+def defence():
+    return 2
+def evasion():
+    return 2
