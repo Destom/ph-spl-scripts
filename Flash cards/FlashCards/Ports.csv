@@ -1,0 +1,3 @@
+Port,MainUse,Security,UsedBy
+80,HTTP,NO,"Apache Server, IIS"
+443,HTTPS,SSL,"Apache Server, IIS"
