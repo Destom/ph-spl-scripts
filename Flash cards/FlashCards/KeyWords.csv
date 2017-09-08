@@ -1,0 +1,95 @@
+﻿Name,Description
+,
+ACL (access control lists),
+Active Recon,initiating a connection with a target to gain information
+"anti-CIA Triad (Discolsure, alteration, disruption)",
+APT(advanced persistent threat),a threat to a network that doesn’t go away
+ARP (Address Resolution Protocol),Networking layer 2
+attack surface,a part of the SW / OS /network  visible to an attack
+BCP (business continuity Plan),Plan to maintain business if the main site goes down this is different from a DRP because a DRP assumes that the system has gone down
+BIOS (Basic Input/Output system),Basic OS built into device to load HW and control its communication (E.G. motherboard)
+Black hat hackers,Hackers working outside the law
+Black-box testing,Pen testing with no knowledge of network before starting
+Bootloader,"tool used to select and start an OS microsoft uses ""windows boot manager"" Linux most popular one is ""Grub2"""
+BPDU  (bridge protocol data units),Language of love for spanning tree systems
+CDP (Cisco Discovery Protocol),
+Chain of custody,The path that can be proven data or evidence takes
+Chroot,A process mounts its own /(root path) inside the system and therefore only looks down for files can easily be escaped as it can change its own / location
+,Viewed as OS level virtualisation (but not a good one)
+"CIA-Triad (confidentiality, integrity, availability)",what a pen tester tries to maintain and what a system should be
+Cold Site,A lower end site held in case of a disaster normally with no data or equipment to be used in an emergency.
+,These sites can be unsecure meaning no data can be stored
+CSRF (Cross sight request Forgery), 
+Daisy chain (in reference to networking),linking devices one after the other meaning information has to be relayed back through each deice to reach target
+daisy chaining (in reference to pen),performing multiple attacks in sequence being used in escalation
+DDOS (Distributed Denial of service),
+Differencing Disk,A basic OS VHDD image that is referenced by different VHDDS instead of having to have the basic information copied for each one used to save space
+DNS (dynamic naming server),
+DOM (document object Model),The code as compiled by your browser before being displayed to the user
+DoS (Denial of service),A type of network attack
+DRP (Disaster Recovery Plan),A plan of action to recover from a disaster scenario that has already taken place
+DTP (Dynamic Trunking Protocol),
+Exploit,code designed to use a vulnerability to bypass security
+File system,Hard Drive control system
+Fstab (file system table),
+Grey hat hacker,someone hacking sometimes within the law sometimes outside
+Grey-box testing,some information of system before pen testing
+GRUB,Boot option and configuration tool designed for Linux (grub 2 exists)
+Hack Value,Higher value then average target  (domain controller for example)
+HAL (Hardware abstraction layer),windows tool to  use multiple different pieces of hardware (E.G. different graphics cards) to do the same job depending what is installed
+HDD (Hard disk drive),
+Hot Site,"The top option as far as disaster sites go. This site typically has a high degree of capabilities like real time network synchronisation, to the point where it duplicates the primary site completely."
+HSRP (Hot standby router protocol),
+HW (hardware),
+IDE (internal development environment),
+Init (Initialization),the father of all processes
+IPS (intrusion prevention systems),
+IRP (incidence response policies),
+IRT (Incidence response team),
+ISE (internal scripting Environment),
+ISN (initial sequence number),unique 32-bit sequence number assigned to each new connection (in networking)
+IT audit,"evaluate a companies systems, training, development procedure and polices to determine how secure the company is as a whole"
+LAN (Local Area Network),
+MAC (Media Access Control),Unique Identifier of network devices
+Metasploit,
+MITM ( Man in the middle),
+NIC (network interface card),
+NIST (national Institute of Standards and technology),
+NSE (Nmap Scripting Environment),View page 
+NTFS (NT (new technology)file system),
+OSI (open systems interconnection),Networking model
+Passive recon,Indistinguishable from normal traffic
+PID(process ID),number assigned to processes running on the processor
+Pivot point,Compromise device  and pivot it's  connections to reach more targets
+PnP (Plug and Play),
+POST (power on self-test),Part of the boot process to make sure all HW is still functional before continuing boot
+ Powershell,The new version of CMD
+Putty,SSH & telnet tool
+ransomware,Encrypts data and tells the user to pay to unlock (not always unlocked)
+RAT (Remote Access Trojan),
+Repeater,
+script-kiddie,you know… like Mike
+SLA (service level agreement),
+Social engineering,gaining information by communicating with a person
+Spider,Travels the web catching metadata
+SSH (Secure Shell),"The basics ""Setup in Linux"""
+SSHstrip,Used with mitm attacks it converts https sites into http sites so that there is no warning pop up on the victims computer
+Statefull remembering,Remembers state of information going in one direction to allow return information
+STP (Spanning tree protocol), tool used to determine who forwards information I a paralel network (BID = bridge id) also uses reply time (cost)
+suicide hacker,someone who hacks without trying to conceal their identity
+SW (Software),
+Syntactic sugar,When a coding language provides a shorthand for the user to make coding simpler
+TOE (Target of Evaluation),system or resource being targeted for vulnerabilities
+Traceroute,shows the hops required to reach a website
+TTL(Time to live),
+VHDD (virtual Hard Disk drive),
+VLAN (Virtual local area network),
+VPN (Virtual private network),
+vulnerability,any weakness in a network or OS
+WAN (Wide area Network),
+Warm site,Middle of the road option for Disaster reCovery providing some equipment and minimal infrastructure saving time for restoration in the case of an emergency but still needing some lead time
+White hat hacker,ethical hacker working inside the rules
+White-box testing,Fully aware of the environment (normally an employee)
+Xming,X server  windows (available on google)
+XSS (Cross Site Scripting) ,Webpage code injection
+Zero-day,exploit not published or known by the developers

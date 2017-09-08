@@ -9,14 +9,15 @@ $cards = Import-csv ..\FlashCards\$choice.csv
 
 while ($exit -ne "y")
 {
-    $card = Get-Random $cards.name
+    $card = Get-Random $cards
     cls
-    Write-Host $card
+    Write-Host $card.name
 
     Read-Host
 
     cls
 
-    $cards | Where-Object name -Like $card
+    $card.name
+    $card.description
     $exit = Read-Host "do you want to exit (Y/N)"
 }
