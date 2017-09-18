@@ -1,0 +1,15 @@
+name,Description
+20-21,FTP
+22,SSH
+23,Telnet
+25,SMTP
+42,WINS
+53,DNS
+80 & 8080,HTTP
+88,Kerberos
+110,POP3
+111,PortMapper-Linux
+123,NTP
+135,RPC-DCOM
+139,SMB
+143,IMAP

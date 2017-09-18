@@ -11,13 +11,13 @@ while ($exit -ne "y")
 {
     $card = Get-Random $cards
     cls
-    Write-Host $card.name
+    Write-Host -BackgroundColor Black -ForegroundColor Green $card.name
 
     Read-Host
 
     cls
 
-    $card.name
-    $card.description
+    Write-Host -BackgroundColor Black -ForegroundColor Green $card.name
+    Write-Host -BackgroundColor Black -ForegroundColor Green $card.description
     $exit = Read-Host "do you want to exit (Y/N)"
 }
