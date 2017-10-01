@@ -1,7 +1,7 @@
 import character
-import importlib
+import action-lib
 
-class opponent:
+class character:
         def __init__(self,name,health,max_health,attack,defence,evasion):
             self.name = name
             self.health = health
@@ -10,23 +10,18 @@ class opponent:
             self.defence = defence
             self.evasion = evasion
 
-rat = opponent("Rat",10,10,4,2,2)
-rous = opponent("ROUS(rodent of unusual size)",10,10,6,2,2)
+rat = character("Rat",10,10,4,2,2)
+rous = character("ROUS(rodent of unusual size)",10,10,6,2,2)
 
 
-character_health = character.health()
-character_mac_health = character.max_health()
-character_attack = character.attack()
-character_defence = character.defence()
-character_evasion = character.evasion()
 
 
 #name = input("what is your name :")
 name = "Destom"
 print ("hello " + name)
+your_character = character(name,10,10,4,2,2)
 
-
-print  ("Your stats are \n Health " + str(character_health) + " out of " + str(character_mac_health) + '\n' + "Attack " + str(character_attack) + '\n' + "Defence " + str(character_defence) + '\n' + "Evasion " + str(character_evasion) + '\n' + '\n' + '\n')
+print  ("Your stats are \n Health " + str(your_character.health) + " out of " + str(your_character.max_health) + '\n' + "Attack " + str(your_character.attack) + '\n' + "Defence " + str(your_character.defence) + '\n' + "Evasion " + str(your_character.evasion) + '\n' + '\n' + '\n')
 
 
 print ("Availible opponents are 'Rat' and 'RUS' (Rodent of unusual size)")
@@ -50,20 +45,22 @@ print ("The %s's stats are " %(e.name) + "\n" +
 print ("what do you want to do: ")
 
 
-while character_health > 0 and enemy_health > 0:
+while your_character.health > 0 and enemy_health > 0:
     action = input ("Attack /a, Defend /d ")
     if action == "a":
-        enemy_health = enemy_health - (character_attack - enemy_defence)
+        enemy_health = enemy_health - (your_character.attack - enemy_defence)
     if action =="d":
-        character_defence += 1
+        your_character.defence += 1
     print ("The " + e.name +"'s health is now " + str(e.health))
-    print ("Your defence is now " + str(character_defence))
+    print ("Your defence is now " + str(your_character.defence))
     print ("The " + e.name + " attacks")
-    if e.attack > character_defence:
-        character_health = character_health - (e.attack - character_defence)
+    if e.attack > your_character.defence:
+        your_character.health = your_character.health - (e.attack - your_character.defence)
     else:
-        character_health = character_health
-    print ("Your health is now " + str(character_health) + " out of " + str(character_mac_health))
+        your_character.health = your_character.health
+    print ("Your health is now " + str(your_character.health) + " out of " + str(your_character.max_health))
+
+
 
 if character_health > 0:
     print ("congratulations " + name + " you won the fight")

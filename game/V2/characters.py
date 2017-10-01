@@ -7,5 +7,12 @@ class character:
             self.defence = defence
             self.evasion = evasion
 
-rat = character("Rat",10,10,6,2,2)
+#Playable characters
+hero_name=""
+your_character = character(hero_name,10,10,4,2,2)
+
+#NPCs
+
+#opponents
+rat = character("Rat",10,10,4,2,2)
 rous = character("ROUS(rodent of unusual size)",10,10,6,2,2)

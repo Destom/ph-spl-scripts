@@ -1,2 +1,1 @@
-for name in range(1,33):
-    print ("ping TCS-" + str(name))
+print("tHIS IS A STRING".capitalize())
