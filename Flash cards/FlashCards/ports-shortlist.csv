@@ -6,7 +6,7 @@ name,Description
 42,WINS
 53,DNS
 80 & 8080,HTTP
-88,Kerberos
+88 - many circles,Kerberos
 110,POP3
 111,PortMapper-Linux
 123,NTP
