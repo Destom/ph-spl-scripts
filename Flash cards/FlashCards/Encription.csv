@@ -1,0 +1,11 @@
+Name,Description
+DES,Data Encryption Standard -Symmetric -56 Bit
+3DES,Triple DES -Symmetric -168 Bit
+Blowfish,-Symmetric -448 Bit
+IDEA,International Data Encryption Algorithm -Symmetric -used in PGP
+RC2, Rivest Cypher -1 to 2048 bit -Symmetric
+RC4, Rivest Cypher -1 to 2048 bit -includes WEP -Symmetric
+RC5, Rivest Cypher -variable bit length -Symmetric
+RC6, Rivest Cypher -128 to 256 bit -Symmetric
+AES, Advanced encription standard or Rjindel to his friends -successor of DES -128 or 192 or 256 bit -Symmetric
+Twofish, -128 to 256 bit -Symmetric
