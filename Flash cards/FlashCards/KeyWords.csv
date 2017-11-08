@@ -1,31 +1,3 @@
-<<<<<<< current
-name,Description
-IRP,Incident Response Policy
-NIST,National Institute of Standards of Technology
-BCP,Business Continuity Plan
-DRP,Disaster recovery Plan
-SLA,Service-level agreement
-FDDI,Fiber Distributed Data Interface
-OSI ,Open systems Intercomunicaiton
-RIP,Routing Information Protocol
-IGRP,Interior Gateway Routing Protocol
-TCP,Transmission control protocol
-UDP,User datagram Protocol
-NetBIOS,Network Basic Input/Output System
-RPC,Remote Procidure Call
-SSL,Secure socket layer
-HTTP,The Hypertext Transfer Protocol 
-WINS,Windows Internet Name Service
-NIC,Network interface card
-NAT,network address translation
-ISP,Internet service provider
-MAC,Media access control
-IPS,Intruder Prevention systems
-IDS,Intruder detection systems
-LDAP,Lightweight Directory Access Protocol
-SNMP,Simple Network Management Protocol
-CIFS,Common Internet File System
-=======
 name,Description
 IRP,Incident Response Policy
 NIST,National Institute of Standards of Technology
@@ -52,4 +24,3 @@ IDS,Intruder detection systems
 LDAP,Lightweight Directory Access Protocol
 SNMP,Simple Network Management Protocol
 CIFS,Common Internet File System
->>>>>>> before discard
