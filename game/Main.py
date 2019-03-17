@@ -1,5 +1,5 @@
 import character
-import action-lib
+import Action-lib
 
 class character:
         def __init__(self,name,health,max_health,attack,defence,evasion):
