@@ -5,6 +5,8 @@ class item:
         self.max_health_up = max_health_up
         self.health_up = health_up
 
+character_gold = item('gold',0,0,0)
+
 potion = item('potion',10,0,5)
 super_potion = item('super_potion',20,0,10)
 
