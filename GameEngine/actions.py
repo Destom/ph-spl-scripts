@@ -7,7 +7,8 @@ def print_status(character):
     print('health: ' + str(character.health) + '/' + str(character.max_health))
     print('attack: ' + str(character.attack))
     print('defence: ' + str(character.defence))
-    print(character_lib.inventory)
+    print(f'your purse currently holds {character.gold}')
+    print(f'and in your inventory you have {character_lib.inventory}')
     print('')
 
 def combat_attack(attacker,defender):
@@ -23,7 +24,7 @@ def combat_victory(opponent):
     print('well done you have vanquished the ' + opponent.name)
     opponent.health = opponent.max_health
     combat_reward = random.choice(opponent.inventory)
-    if (combat_reward)
+    print (f'for your victory you win {combat_reward}')
     character_lib.inventory.append(combat_reward)
 
 def combat_action(opponent):
