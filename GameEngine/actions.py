@@ -8,7 +8,7 @@ def print_status(character):
     print('attack: ' + str(character.attack))
     print('defence: ' + str(character.defence))
     print(f'your purse currently holds {character.gold}')
-    print(f'and in your inventory you have {character_lib.inventory}')
+    print(str(character.inventory.item_list))
     print('')
 
 def combat_attack(attacker,defender):
@@ -23,9 +23,9 @@ def combat_defence(attacker):
 def combat_victory(opponent):
     print('well done you have vanquished the ' + opponent.name)
     opponent.health = opponent.max_health
-    combat_reward = random.choice(opponent.inventory)
+    combat_reward = random.choice(opponent.inventory.item_list)
     print (f'for your victory you win {combat_reward}')
-    character_lib.inventory.append(combat_reward)
+    character_lib.item_lib.inventory_user.item_list.append(combat_reward)
 
 def combat_action(opponent):
     character_lib.user.attack = character_lib.user.stat_attack
@@ -91,3 +91,14 @@ def select_item():
             use_item(item_lib.potion)
         else:
             print("You don't have enough of those")
+
+def store():
+    print('''welcome to the store would you like to purchase or sell goods
+    1 - Purchase
+    2 - Sell
+    ''')
+    store_choice = input('Your choice:')
+    if (store_choice == 1):
+        pass
+    elif (store_choice == 2):
+        pass

@@ -13,8 +13,8 @@ class character:
         self.defence = stat_defence
 
 
-user = character('bob',10,2,1,"inventory",0)
+user = character('bob',10,2,1,item_lib.inventory_user,0)
 
-#mouse = character('mouse',2,1,1,item_lib.inventory_basic)
-#rat = character('rat',10,2,1,item_lib.inventory_basic)
-#ROUS = character('ROUS',15,4,1,item_lib.inventory_advanced)
+mouse = character('mouse',2,1,1,item_lib.inventory_basic)
+rat = character('rat',10,2,1,item_lib.inventory_basic)
+ROUS = character('ROUS',15,4,1,item_lib.inventory_advanced)
