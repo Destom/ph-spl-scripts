@@ -2,6 +2,33 @@ import character_lib
 import item_lib
 import random
 
+class store:
+     def __init__(self,name,inventory,gold):
+        self.name = name
+        self.inventory = inventory
+        self.gold = gold
+     def enter(self):
+        store_choice = 0
+        print(f'''welcome to {self.name}
+we currently have {self.inventory.item_list} in stock.
+I have {self.gold} gold if you would like to sell anything to me''')
+        while  (store_choice != '3'):
+            print ('''What would you like to do
+1 - Buy
+2 - sell
+3 - Leave''')
+            store_choice = str(input('Your choice: '))
+            if (store_choice == '1'):
+                print(f'''I currently have
+                {self.inventory.item_list}''')
+            elif (store_choice == '2'):
+                pass
+
+
+
+
+home_store = store('home store',item_lib.inventory_basic,50)
+
 def print_status(character):
     print('name: ' + character.name)
     print('health: ' + str(character.health) + '/' + str(character.max_health))
@@ -19,7 +46,7 @@ def combat_attack(attacker,defender):
 def combat_defence(attacker):
     attacker.defence += 1
     print (str(attacker.name) + " defence is now " + str(attacker.defence))
-##working here whene I start up getting gold in account
+
 def combat_victory(opponent):
     print('well done you have vanquished the ' + opponent.name)
     opponent.health = opponent.max_health
@@ -91,14 +118,3 @@ def select_item():
             use_item(item_lib.potion)
         else:
             print("You don't have enough of those")
-
-def store():
-    print('''welcome to the store would you like to purchase or sell goods
-    1 - Purchase
-    2 - Sell
-    ''')
-    store_choice = input('Your choice:')
-    if (store_choice == 1):
-        pass
-    elif (store_choice == 2):
-        pass

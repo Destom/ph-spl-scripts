@@ -23,4 +23,4 @@ while (choice != 'x'):
     elif (choice == '3'):
         actions.combat_victory(character_lib.ROUS)
     elif (choice == '4'):
-        pass
+        actions.home_store.enter()

@@ -9,8 +9,6 @@ class inventory:
     def __init__(self,name,item_list):
         self.name = name
         self.item_list = item_list
-#    def __repr__(self):
-#        return f'The {self.name} contains {self.item_list}'
 
 potion = item('potion',10,0,5)
 super_potion = item('super_potion',20,0,10)
