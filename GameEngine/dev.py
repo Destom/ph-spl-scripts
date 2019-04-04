@@ -2,6 +2,16 @@
 
 import actions
 import character_lib
+import item_lib
+
+item_dict = {}
+for item in item_lib.inventory_lots.item_list:
+    if (item_dict.contains(item)):
+        print(item)
+    else:
+        print (f'no {item}'')
+
+exit()
 
 choice = ""
 

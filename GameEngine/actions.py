@@ -7,6 +7,7 @@ class store:
         self.name = name
         self.inventory = inventory
         self.gold = gold
+
      def enter(self):
         store_choice = 0
         print(f'''welcome to {self.name}
@@ -14,15 +15,18 @@ we currently have {self.inventory.item_list} in stock.
 I have {self.gold} gold if you would like to sell anything to me''')
         while  (store_choice != '3'):
             print ('''What would you like to do
-1 - Buy
-2 - sell
-3 - Leave''')
+    1 - Buy
+    2 - sell
+    3 - Leave''')
             store_choice = str(input('Your choice: '))
             if (store_choice == '1'):
                 print(f'''I currently have
-                {self.inventory.item_list}''')
+{self.inventory.item_list}
+what would you like to buy?''')
+                store_purchase_choice = str(input('Your choice: '))
             elif (store_choice == '2'):
-                pass
+                print(f'''I currently have {self.gold} gold.
+                what would you like to sell?''' )
 
 
 
