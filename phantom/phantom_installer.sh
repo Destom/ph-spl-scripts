@@ -35,12 +35,13 @@ wget http://download.splunk.com/products/phantom/release/linux/$shortened/phanto
 tar xf ./phantom_offline_setup_centos7-$requested.tgz
 cd ./phantom_offline_setup_centos7-$requested
 ./phantom_offline_setup_centos.sh install
+cd ../
 
-
+/opt/phantom/bin/stop_phantom.sh
     #### Fix for broken web service ###
 setfacl -b /var/log/phantom/app_install.log;
 chmod 775 /var/log/phantom/app_install.log;
 
-
-/opt/phantom/bin/stop_phantom.sh
 /opt/phantom/bin/start_phantom.sh
+rm -f phantom_offline_setup_centos7-$requested.tgz
+rm -rf phantom_offline_setup_centos7-$requested
