@@ -1,7 +1,7 @@
 #####################
 #
 # This script grabs a list of releases downloads/ extracts and starts the install process.
-# This script has only been tested with with the 4.10.x Releases on CentOS 
+# This script has only been tested with with the 4.10.x Releases on CentOS
 #
 #####################
 
@@ -14,7 +14,12 @@ printf "\n\n\n"
 
 for row in $versions
 do
-	echo $row
+	length=$(echo "${row##*$'\.'}"|wc -c)
+	if [ $length -gt 2 ]
+		then
+        echo $row
+        echo $length
+	fi
 done
 
 printf '\nWhat version would like like?\n'
@@ -36,4 +41,6 @@ cd ./phantom_offline_setup_centos7-$requested
 setfacl -b /var/log/phantom/app_install.log;
 chmod 775 /var/log/phantom/app_install.log;
 
+
+/opt/phantom/bin/stop_phantom.sh
 /opt/phantom/bin/start_phantom.sh
