@@ -18,7 +18,6 @@ do
 	if [ $length -gt 2 ]
 		then
         echo $row
-        echo $length
 	fi
 done
 
