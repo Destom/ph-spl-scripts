@@ -33,7 +33,7 @@ wget http://download.splunk.com/products/phantom/release/linux/$shortened/phanto
 
 tar xf ./phantom_offline_setup_centos7-$requested.tgz
 cd ./phantom_offline_setup_centos7-$requested
-./phantom_offline_setup_centos.sh install
+./phantom_offline_setup_centos.sh install --without-apps 
 cd ../
 
 /opt/phantom/bin/stop_phantom.sh
