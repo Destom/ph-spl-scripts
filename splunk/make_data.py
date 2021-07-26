@@ -52,11 +52,11 @@ def type_select(log_format):
 
 def write_message(number):
     if number == 1 :
-        return f"\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam {getoldstamp()}, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        return f"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam {getoldstamp()}, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
     if number ==2 :
-        return f"\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore {getoldstamp()} magna aliqua. Ut enim ad minim veniam {getoldstamp()}, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        return f"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore {getoldstamp()} magna aliqua. Ut enim ad minim veniam {getoldstamp()}, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
     if number == 3 :
-        return f"\n {getstamp()} login {randomString(random.randrange(4,10))} {random.choice(login_msg)} on server={randomString(random.randrange(4,10))}.{random.choice(companies)}.{random.choice(domains)}"
+        return f"{getstamp()} login {randomString(random.randrange(4,10))} {random.choice(login_msg)} on server={randomString(random.randrange(4,10))}.{random.choice(companies)}.{random.choice(domains)}\n"
     if number ==4 :
         return f"Two years ago the time was: {getoldstamp()}, but now the time is {getstamp()}\n"
     if number ==5 :
