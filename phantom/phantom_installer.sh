@@ -5,7 +5,7 @@
 #
 #####################
 
-versions=$(curl https://docs.splunk.com/Documentation/Phantom/4.10.4/Install/PhantomReposAndSigningKeys#For_Splunk_Phantom_deployments_without_internet_access_or_unprivileged_deployments | grep -P "\<td\>\d\.\d*\.\d*" | awk '{FS="<.?td>"} {print $2}')
+versions=$(curl https://docs.splunk.com/Documentation/Phantom/latest/Install/PhantomReposAndSigningKeys#For_Splunk_Phantom_deployments_without_internet_access_or_unprivileged_deployments | grep -P "\<td\>\d\.\d*\.\d*" | awk '{FS="<.?td>"} {print $2}')
 
 printf "\n\n"
 #Printing available versions
