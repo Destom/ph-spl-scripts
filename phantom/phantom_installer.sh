@@ -5,11 +5,11 @@
 #
 #####################
 
-versions=$(curl https://docs.splunk.com/Documentation/Phantom/latest/Install/PhantomReposAndSigningKeys#For_Splunk_Phantom_deployments_without_internet_access_or_unprivileged_deployments | grep -P "\<td\>\d\.\d*\.\d*" | awk '{FS="<.?td>"} {print $2}')
+versions=$(curl https://docs.splunk.com/Documentation/SOARonprem/latest/Install/PhantomReposAndSigningKeys#For_Splunk_Phantom_deployments_without_internet_access_or_unprivileged_deployments | grep -P "\<td\>\d\.\d*\.\d*" | awk '{FS="<.?td>"} {print $2}')
 
 printf "\n\n"
 #Printing available versions
-echo 'Available versions according to https://docs.splunk.com/Documentation/Phantom/4.10.4/Install/PhantomReposAndSigningKeys#For_Splunk_Phantom_deployments_without_internet_access_or_unprivileged_deployments.'
+echo 'Available versions according to https://docs.splunk.com/Documentation/SOARonprem/latest/Install/PhantomReposAndSigningKeys#For_Splunk_Phantom_deployments_without_internet_access_or_unprivileged_deployments.'
 printf "\n\n\n"
 
 for row in $versions
