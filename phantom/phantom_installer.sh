@@ -32,7 +32,8 @@ printf 'shortened version is:'$shortened'\n'
 if [ $shortened == '5.1.0' ]
 	then
 echo 'trying to install system logos dependency'
-sudo yum install system-logos -y
+yum install system-logos -y
+yum erase openssl-devel -y
 fi
 
 wget http://download.splunk.com/products/phantom/release/linux/$shortened/phantom_offline_setup_centos7-$requested.tgz || wget http://download.splunk.com/products/phantom/release/linux/$requested/phantom_offline_setup_centos7-$requested.tgz || wget http://download.splunk.com/products/phantom/releases/$shortened/linux/phantom_offline_setup_centos7-$requested.tgz
