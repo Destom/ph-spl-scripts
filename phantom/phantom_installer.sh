@@ -29,7 +29,7 @@ shortened=$(echo $requested | sed -E 's/\.[0-9]+$//')
 printf 'installing Phantom version:'$requested'\n'
 printf 'shortened version is:'$shortened'\n'
 
-if [ $shortened -eq 5.1.0 ]
+if [ $shortened == '5.1.0' ]
 	then
 echo 'trying to install system logos dependency'
 sudo yum install system-logos -y
