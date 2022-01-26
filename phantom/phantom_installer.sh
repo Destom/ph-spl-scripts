@@ -29,6 +29,11 @@ shortened=$(echo $requested | sed -E 's/\.[0-9]+$//')
 printf 'installing Phantom version:'$requested'\n'
 printf 'shortened version is:' $shortened '\n'
 
+if [ $shortened -eq 5.1.0 ]
+	then
+	sudo yum install system-logos -y
+fi
+
 wget http://download.splunk.com/products/phantom/release/linux/$shortened/phantom_offline_setup_centos7-$requested.tgz || wget http://download.splunk.com/products/phantom/release/linux/$requested/phantom_offline_setup_centos7-$requested.tgz || wget http://download.splunk.com/products/phantom/releases/$shortened/linux/phantom_offline_setup_centos7-$requested.tgz
 
 tar xf ./phantom_offline_setup_centos7-$requested.tgz
